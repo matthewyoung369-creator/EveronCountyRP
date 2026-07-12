@@ -1,0 +1,227 @@
+SCR_AIWorld SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
+ coords 6120.51 157.494 6279.017
+ {
+  CommentEntity {
+   coords 0 1 0
+   m_Comment "SCR_AIWorld: "\
+   "Configure navigation mesh"
+   m_Color 0 0 0
+   m_FaceCamera 1
+   m_TextBackground 1
+   m_BackgroundColor 1 0.6 0
+   m_BackgroundTransparency 0
+  }
+ }
+}
+PerceptionManager PerceptionManager : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
+ coords 6120.51 157.845 6283.017
+}
+SCR_FactionManager FactionManager_USxUSSR : "{589540B35EBA8CDC}Prefabs/MP/Managers/Factions/FactionManager_USxUSSR.et" {
+ coords 6120.51 157.587 6280.017
+ {
+  CommentEntity {
+   coords 0 1 0
+   m_Comment "FactionManager_USxUSSR: "\
+   "Configure desired factions"
+   m_Color 0 0 0
+   m_FaceCamera 1
+   m_TextBackground 1
+   m_BackgroundColor 1 0.6 0
+   m_BackgroundTransparency 0
+  }
+ }
+}
+RadioManagerEntity RadioManager : "{B8E09FAB91C4ECCD}Prefabs/Systems/Radio/RadioManager.et" {
+ coords 6120.51 157.752 6282.017
+}
+SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/Systems/ScenarioFramework/GameModeSF.et" {
+ components {
+  ECRP_TestComponent "{69D8554C41539BF8}" {
+  }
+  SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
+   m_SpawnLogic SCR_AutoSpawnLogic "{5D36888CC966608A}" {
+    m_sForcedFaction "US"
+    m_sForcedLoadout "US"
+   }
+  }
+ }
+ coords 6120.51 157.4 6278.017
+}
+ScriptedChatEntity ScriptedChatEntity : "{F69BC912AC8236F9}Prefabs/MP/ScriptedChatEntity.et" {
+ coords 6120.51 157.939 6284.017
+}
+SCR_SpawnPoint : "{5392C4D80E4B18F8}Prefabs/MP/Spawning/SpawnPoint_FFA.et" {
+ editor EntityEditorProps "{69D85CB4FB7A9864}" {
+  DynamicBox 0
+  Color 1 0 0 1
+ }
+ coords 2526.865 86.914 5344.783
+ m_sFaction "US"
+}
+SCR_LoadoutManager LoadoutManager_USxUSSR : "{97EF4C1A41F63DDB}Prefabs/MP/Managers/Loadouts/LoadoutManager_USxUSSR.et" {
+ coords 6120.51 157.665 6281.017
+ {
+  CommentEntity {
+   coords 0 1 0
+   m_Comment "LoadoutManager_USxUSSR: "\
+   "Configure desired loadouts"
+   m_Color 0 0 0
+   m_FaceCamera 1
+   m_TextBackground 1
+   m_BackgroundColor 1 0.6 0
+   m_BackgroundTransparency 0
+  }
+ }
+}
+SCR_ChimeraCharacter : "{9916F86E75304B06}Prefabs/Characters/Factions/BLUFOR/US_Army/ECRP_PlayerCharacter.et" {
+ coords 2527.773 86.935 5344.299
+}
+SCR_DestructibleBuildingEntity : "{F03441BF279A92E9}PrefabLibrary/CainLibrary/Structures/Services/Office_USSR_05.et" {
+ coords 2535.509 -0.252 5324.93
+ {
+  Building {
+   ID "62D532E210C3D33B"
+   {
+    Building {
+     ID "6260D5A0E54B53C5"
+     coords -26.95 3.102 14.582
+    }
+   }
+  }
+  GenericEntity {
+   ID "62D484949DACD278"
+   {
+    GenericEntity {
+     ID "62D517024B5784D6"
+     coords -13.498 1.33 -63.461
+    }
+    GenericEntity {
+     ID "62D517024B5784E7"
+     coords -13.498 1.33 -62.201
+    }
+    GenericEntity {
+     ID "65FE73EE612DB886"
+     coords -8.592 1.33 -64.754
+    }
+    GenericEntity {
+     ID "6628BEAC6AE280C3"
+     coords -9.731 4.93 -55.027
+    }
+    GenericEntity {
+     ID "65FE73EE612DE120"
+     coords -9.996 1.329 -62.193
+    }
+    GenericEntity {
+     ID "62D517024B578584"
+     coords -13.722 2.555 -62.589
+    }
+    GenericEntity {
+     ID "62D517024B5785F3"
+     coords -13.722 2.555 -60.477
+    }
+    GenericEntity {
+     ID "65FE73EE612DB8A5"
+     coords -8.927 2.518 -59.273
+    }
+    GenericEntity {
+     ID "62D517024B577A0B"
+     coords -13.721 2.269 -60.462
+    }
+    GenericEntity {
+     ID "62D517024B577A1C"
+     coords -13.722 2.269 -62.564
+    }
+    GenericEntity {
+     ID "62D517024B577A2C"
+     coords -13.504 2.269 -60.391
+    }
+    GenericEntity {
+     ID "62D517024B577ACB"
+     coords -10.223 1.598 -64.684
+    }
+    GenericEntity {
+     ID "62D517024B577ADD"
+     coords -10.223 1.598 -63.444
+    }
+    GenericEntity {
+     ID "62D517024B577AEF"
+     coords -10.223 1.598 -62.136
+    }
+    GenericEntity {
+     ID "6628BEAC6AE3593B"
+     coords -10.512 4.93 -56.017
+    }
+    GenericEntity {
+     ID "65FE73EE612DE64B"
+     coords -8.021 1.33 -63.659
+    }
+    GenericEntity {
+     ID "6628BEAC6AE280CF"
+     coords -10.17 4.93 -53.788
+    }
+    GenericEntity {
+     ID "65FE73EE612DE136"
+     coords -8.821 1.33 -61.367
+    }
+    GenericEntity {
+     ID "65FE73EE612DE685"
+     coords -6.954 1.33 -64.906
+    }
+    GenericEntity {
+     ID "65FE73EE612DE6CF"
+     coords -9.418 1.33 -61.189
+    }
+    GenericEntity {
+     ID "65FE73EE612DE6D2"
+     coords -8.25 1.33 -60.684
+    }
+    GenericEntity {
+     ID "65FE73EE612DE6FB"
+     coords -7.472 1.33 -63.385
+    }
+    GenericEntity {
+     ID "65FE73EE612DE692"
+     coords -7.072 1.33 -64.465
+    }
+    GenericEntity {
+     ID "65FE73EE612DE6B2"
+     coords -7.723 1.33 -64.544
+    }
+    GenericEntity {
+     ID "62D517024B56040B"
+     coords -13.488 1.33 -64.097
+    }
+    GenericEntity {
+     ID "62D517024B560330"
+     coords -10.352 4.634 -57.597
+    }
+    GenericEntity {
+     ID "65FE73EE61207AC7"
+     coords -15.385 4.63 -54.587
+    }
+    GenericEntity {
+     ID "6628BEAC6AE280FC"
+     coords -11.165 4.93 -55.204
+    }
+    GenericEntity {
+     ID "62D517024B567133"
+     coords -15.237 5.519 -53.172
+    }
+    GenericEntity {
+     ID "65FE73EE612DE1BE"
+     coords -10.223 2.433 -62.806
+    }
+    GenericEntity {
+     ID "62D517024B5605A0"
+     coords -9.075 2.359 -59.058
+     {
+      GenericEntity {
+       ID "6610D4A13F2BD9A5"
+       coords -0.002 0.948 -0.008
+      }
+     }
+    }
+   }
+  }
+ }
+}

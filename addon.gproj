@@ -1,0 +1,8 @@
+GameProject {
+ ID "EveronCountyRP"
+ GUID "69D843DA3A9C11EB"
+ TITLE "EveronCountyRP"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+}
