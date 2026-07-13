@@ -76,6 +76,15 @@ SCR_LoadoutManager LoadoutManager_USxUSSR : "{97EF4C1A41F63DDB}Prefabs/MP/Manage
 SCR_ChimeraCharacter : "{9916F86E75304B06}Prefabs/Characters/Factions/BLUFOR/US_Army/ECRP_PlayerCharacter.et" {
  coords 2527.773 86.935 5344.299
 }
+GenericEntity : "{CBEFDBFB8FB0F6CE}PrefabLibrary/DefaultLibrary/Props/Civilian/MessageBoard_01.et" {
+ components {
+  ECRP_InteractableComponent "{69DA1CC37B72C825}" {
+  }
+  ECRP_JobBoardComponent "{69DA1CC37F41ABF7}" {
+  }
+ }
+ coords 2523.658 86.132 5335.297
+}
 SCR_DestructibleBuildingEntity : "{F03441BF279A92E9}PrefabLibrary/CainLibrary/Structures/Services/Office_USSR_05.et" {
  components {
   ECRP_InteractableComponent "{69DA102F7BA4D964}" {
