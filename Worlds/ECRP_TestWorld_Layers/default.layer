@@ -77,6 +77,12 @@ SCR_ChimeraCharacter : "{9916F86E75304B06}Prefabs/Characters/Factions/BLUFOR/US_
  coords 2527.773 86.935 5344.299
 }
 SCR_DestructibleBuildingEntity : "{F03441BF279A92E9}PrefabLibrary/CainLibrary/Structures/Services/Office_USSR_05.et" {
+ components {
+  ECRP_InteractableComponent "{69DA102F7BA4D964}" {
+  }
+  ECRP_TestInteractableComponent "{69DA102F78793336}" {
+  }
+ }
  coords 2535.509 -0.252 5324.93
  {
   Building {
