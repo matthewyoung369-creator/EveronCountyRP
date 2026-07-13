@@ -1,24 +1,41 @@
-// Interaction action used by a job board to accept the delivery driver job.
-class ECRP_AcceptDeliveryDriverAction : ECRP_InteractionAction
+// Native contextual action exposed by the Job Board's ActionsManagerComponent.
+class ECRP_AcceptDeliveryDriverAction : ScriptedUserAction
 {
-	// Assigns the action identifier and display name.
-	void Initialize()
+	protected static const float MAXIMUM_DISTANCE = 3.0;
+
+	override void PerformAction(IEntity pOwnerEntity, IEntity pUserEntity)
 	{
-		SetInteractionData(
-			"accept_delivery_driver",
-			"Accept Delivery Driver Job"
-		);
+		Print("ECRP: Delivery Driver job accepted.", LogLevel.NORMAL);
 	}
 
-	// Handles acceptance of the delivery driver job.
-	override void Interact(ECRP_InteractionContext context)
+	override bool CanBeShownScript(IEntity user)
 	{
-		if (!context)
-			return;
+		return IsUserInRange(user);
+	}
 
-		Print(
-			"ECRP: Delivery Driver job accepted.",
-			LogLevel.NORMAL
-		);
+	override bool CanBePerformedScript(IEntity user)
+	{
+		return IsUserInRange(user);
+	}
+
+	override bool HasLocalEffectOnlyScript()
+	{
+		return true;
+	}
+
+	override bool GetActionNameScript(out string outName)
+	{
+		outName = "Accept Delivery Driver Job";
+		return true;
+	}
+
+	protected bool IsUserInRange(IEntity user)
+	{
+		IEntity owner = GetOwner();
+
+		if (!owner || !user)
+			return false;
+
+		return vector.Distance(owner.GetOrigin(), user.GetOrigin()) <= MAXIMUM_DISTANCE;
 	}
 }

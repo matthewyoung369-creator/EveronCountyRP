@@ -1,0 +1,10 @@
+SCR_LoadoutManager : "{97EF4C1A41F63DDB}Prefabs/MP/Managers/Loadouts/LoadoutManager_USxUSSR.et" {
+ ID "69DA7F112A62E9C1"
+ m_aPlayerLoadouts {
+  SCR_FactionPlayerLoadout "{69DA7F112A6058AD}" {
+   m_sLoadoutName "ECRP_US_Rifleman"
+   m_sLoadoutResource "{9916F86E75304B06}Prefabs/Characters/Factions/BLUFOR/US_Army/ECRP_PlayerCharacter.et"
+   m_sAffiliatedFaction "US"
+  }
+ }
+}
