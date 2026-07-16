@@ -3,5 +3,7 @@ SCR_ChimeraCharacter : "{6648BF10EB8790B8}Prefabs/Characters/Campaign/Final/BLUF
  components {
   ECRP_PlayerMoneyComponent "{69D85CB7478D0DFE}" {
   }
+  ECRP_PlayerJobComponent "{69DC49D84C8517B2}" {
+  }
  }
 }

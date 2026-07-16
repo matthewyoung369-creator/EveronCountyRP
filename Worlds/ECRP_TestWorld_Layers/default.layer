@@ -13,9 +13,11 @@ SCR_AIWorld SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
   }
  }
 }
+
 PerceptionManager PerceptionManager : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
  coords 6120.51 157.845 6283.017
 }
+
 SCR_FactionManager FactionManager_USxUSSR : "{589540B35EBA8CDC}Prefabs/MP/Managers/Factions/FactionManager_USxUSSR.et" {
  coords 6120.51 157.587 6280.017
  {
@@ -31,9 +33,11 @@ SCR_FactionManager FactionManager_USxUSSR : "{589540B35EBA8CDC}Prefabs/MP/Manage
   }
  }
 }
+
 RadioManagerEntity RadioManager : "{B8E09FAB91C4ECCD}Prefabs/Systems/Radio/RadioManager.et" {
  coords 6120.51 157.752 6282.017
 }
+
 SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/Systems/ScenarioFramework/GameModeSF.et" {
  components {
   ECRP_TestComponent "{69D8554C41539BF8}" {
@@ -47,9 +51,11 @@ SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/Systems/ScenarioFramewo
  }
  coords 6120.51 157.4 6278.017
 }
+
 ScriptedChatEntity ScriptedChatEntity : "{F69BC912AC8236F9}Prefabs/MP/ScriptedChatEntity.et" {
  coords 6120.51 157.939 6284.017
 }
+
 SCR_SpawnPoint : "{5392C4D80E4B18F8}Prefabs/MP/Spawning/SpawnPoint_FFA.et" {
  editor EntityEditorProps "{69D85CB4FB7A9864}" {
   DynamicBox 0
@@ -58,6 +64,7 @@ SCR_SpawnPoint : "{5392C4D80E4B18F8}Prefabs/MP/Spawning/SpawnPoint_FFA.et" {
  coords 2526.865 86.914 5344.783
  m_sFaction "US"
 }
+
 SCR_LoadoutManager ECRP_LoadoutManager : "{69DA7F112A664C35}Prefabs/MP/Managers/Loadouts/ECRP_LoadoutManager.et" {
  coords 6120.51 157.665 6281.017
  {
@@ -73,6 +80,7 @@ SCR_LoadoutManager ECRP_LoadoutManager : "{69DA7F112A664C35}Prefabs/MP/Managers/
   }
  }
 }
+
 GenericEntity : "{A7BBEF1B337479E0}PrefabLibrary/DefaultLibrary/Props/Civilian/MessageBoard_02.et" {
  components {
   ActionsManagerComponent "{69DA6CDAF1132105}" {
@@ -98,9 +106,11 @@ GenericEntity : "{A7BBEF1B337479E0}PrefabLibrary/DefaultLibrary/Props/Civilian/M
  }
  coords 2524.121 86.649 5339.788
 }
+
 GenericEntity : "{CBEFDBFB8FB0F6CE}PrefabLibrary/DefaultLibrary/Props/Civilian/MessageBoard_01.et" {
  coords 2523.658 86.132 5335.297
 }
+
 SCR_DestructibleBuildingEntity : "{F03441BF279A92E9}PrefabLibrary/CainLibrary/Structures/Services/Office_USSR_05.et" {
  components {
   ECRP_InteractableComponent "{69DA102F7BA4D964}" {
@@ -119,6 +129,7 @@ SCR_DestructibleBuildingEntity : "{F03441BF279A92E9}PrefabLibrary/CainLibrary/St
     }
    }
   }
+
   GenericEntity {
    ID "62D484949DACD278"
    {
