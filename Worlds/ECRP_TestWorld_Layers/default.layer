@@ -64,7 +64,6 @@ SCR_SpawnPoint : "{5392C4D80E4B18F8}Prefabs/MP/Spawning/SpawnPoint_FFA.et" {
  coords 2526.865 86.914 5344.783
  m_sFaction "US"
 }
-
 SCR_LoadoutManager ECRP_LoadoutManager : "{69DA7F112A664C35}Prefabs/MP/Managers/Loadouts/ECRP_LoadoutManager.et" {
  coords 6120.51 157.665 6281.017
  {
@@ -80,16 +79,18 @@ SCR_LoadoutManager ECRP_LoadoutManager : "{69DA7F112A664C35}Prefabs/MP/Managers/
   }
  }
 }
-
 GenericEntity : "{A7BBEF1B337479E0}PrefabLibrary/DefaultLibrary/Props/Civilian/MessageBoard_02.et" {
  components {
   ActionsManagerComponent "{69DA6CDAF1132105}" {
    ActionContexts {
-    UserActionContext "{69DA713583C7F60C}" {
+    UserActionContext "{69DA6CDADE27C019}" {
+     UIInfo UIInfo "{69E03DE950990732}" {
+      Name "Job"
+     }
      ContextName "job_board"
-     Position PointInfo "{69DA7135F55840E5}" {
-      Offset 0 1.2577 -0.0488
-      Angles -15.6656 0 0
+     Position PointInfo "{69E03DE90DDA5947}" {
+      Offset 0 1.25 -0.05
+      Angles -15 0 0
      }
     }
    }
@@ -104,7 +105,7 @@ GenericEntity : "{A7BBEF1B337479E0}PrefabLibrary/DefaultLibrary/Props/Civilian/M
    }
   }
  }
- coords 2524.121 86.649 5339.788
+ coords 2524.082 86.782 5339.793
 }
 
 GenericEntity : "{CBEFDBFB8FB0F6CE}PrefabLibrary/DefaultLibrary/Props/Civilian/MessageBoard_01.et" {
