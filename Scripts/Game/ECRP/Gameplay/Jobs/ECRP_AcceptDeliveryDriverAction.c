@@ -3,57 +3,6 @@ class ECRP_AcceptDeliveryDriverAction : ScriptedUserAction
 {
 	protected static const float MAXIMUM_DISTANCE = 3.0;
 	protected static const string DELIVERY_DRIVER_JOB_ID = "delivery_driver";
- HEAD
-
-	override void PerformAction(IEntity pOwnerEntity, IEntity pUserEntity)
-	{
-		ChimeraCharacter character = ChimeraCharacter.Cast(pUserEntity);
-
-		if (!character)
-		{
-			Print(
-				"ECRP: Delivery Driver job assignment failed: user is not a character.",
-				LogLevel.ERROR
-			);
-			return;
-		}
-
-		ECRP_PlayerJobComponent jobComponent =
-			ECRP_PlayerJobComponent.Cast(
-				character.FindComponent(ECRP_PlayerJobComponent)
-			);
-
-		if (!jobComponent)
-		{
-			Print(
-				"ECRP: Delivery Driver job assignment failed: player job component is missing.",
-				LogLevel.ERROR
-			);
-			return;
-		}
-
-		if (jobComponent.HasActiveJob())
-		{
-			Print(
-				"ECRP: Player already has an active job.",
-				LogLevel.NORMAL
-			);
-			return;
-		}
-
-		if (!jobComponent.AssignJob(DELIVERY_DRIVER_JOB_ID))
-		{
-			Print(
-				"ECRP: Delivery Driver job assignment failed.",
-				LogLevel.ERROR
-			);
-			return;
-		}
-
-		Print(
-			"ECRP: Delivery Driver job assigned.",
-			LogLevel.NORMAL
-
 	protected static const ResourceName DELIVERY_PACKAGE_PREFAB =
 		"{BBA21E130F0D45C7}Prefabs/Gameplay/Jobs/ECRP_DeliveryPackage.et";
 
@@ -121,7 +70,6 @@ class ECRP_AcceptDeliveryDriverAction : ScriptedUserAction
 			packageResource,
 			jobBoard.GetWorld(),
 			spawnParams
- 4b6fc19 (Add visible delivery package spawning)
 		);
 
 		if (!packageEntity)
@@ -163,39 +111,5 @@ class ECRP_AcceptDeliveryDriverAction : ScriptedUserAction
 			return false;
 
 		return vector.Distance(owner.GetOrigin(), user.GetOrigin()) <= MAXIMUM_DISTANCE;
-	}
-
-	override bool CanBeShownScript(IEntity user)
-	{
-		return IsUserInRange(user);
-	}
-
-	override bool CanBePerformedScript(IEntity user)
-	{
-		return IsUserInRange(user);
-	}
-
-	override bool HasLocalEffectOnlyScript()
-	{
-		return true;
-	}
-
-	override bool GetActionNameScript(out string outName)
-	{
-		outName = "Accept Delivery Driver Job";
-		return true;
-	}
-
-	protected bool IsUserInRange(IEntity user)
-	{
-		IEntity owner = GetOwner();
-
-		if (!owner || !user)
-			return false;
-
-		return vector.Distance(
-			owner.GetOrigin(),
-			user.GetOrigin()
-		) <= MAXIMUM_DISTANCE;
 	}
 }

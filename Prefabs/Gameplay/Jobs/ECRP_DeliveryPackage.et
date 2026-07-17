@@ -1,2 +1,28 @@
 GenericEntity : "{1284F9C5D25E263E}Prefabs/Props/Crates/CardboardBox/CardboardBox_01.et" {
+ components {
+  RplComponent "{6F196E32A79406B0}" {
+  }
+  ActionsManagerComponent "{6F196E32A79406B1}" {
+   ActionContexts {
+    UserActionContext "{6F196E32A79406B2}" {
+     UIInfo UIInfo "{6F196E32A79406B3}" {
+      Name "Delivery Package"
+     }
+     ContextName "delivery_package"
+     Position PointInfo "{6F196E32A79406B4}" {
+      Offset 0 0.25 0
+     }
+    }
+   }
+   additionalActions {
+    ECRP_PickupDeliveryPackageAction "{6F196E32A79406B5}" {
+     ParentContextList {
+      "delivery_package"
+     }
+     ActionTitle "Pick Up Delivery Package"
+     VisibilityRange 2
+    }
+   }
+  }
+ }
 }
