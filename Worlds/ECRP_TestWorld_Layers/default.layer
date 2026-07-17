@@ -89,6 +89,13 @@ GenericEntity : "{A7BBEF1B337479E0}PrefabLibrary/DefaultLibrary/Props/Civilian/M
      }
      ContextName "job_board"
      Position PointInfo "{69E03DE90DDA5947}" {
+
+     UIInfo UIInfo "{69E045AC49DFB190}" {
+      Name "Job Board"
+     }
+     ContextName "job_board"
+     Position PointInfo "{69E045AC6CCE50C3}" {
+ 4b6fc19 (Add visible delivery package spawning)
       Offset 0 1.25 -0.05
       Angles -15 0 0
      }
@@ -110,6 +117,8 @@ GenericEntity : "{A7BBEF1B337479E0}PrefabLibrary/DefaultLibrary/Props/Civilian/M
 
 GenericEntity : "{CBEFDBFB8FB0F6CE}PrefabLibrary/DefaultLibrary/Props/Civilian/MessageBoard_01.et" {
  coords 2523.658 86.132 5335.297
+=======
+ 4b6fc19 (Add visible delivery package spawning)
 }
 
 SCR_DestructibleBuildingEntity : "{F03441BF279A92E9}PrefabLibrary/CainLibrary/Structures/Services/Office_USSR_05.et" {
