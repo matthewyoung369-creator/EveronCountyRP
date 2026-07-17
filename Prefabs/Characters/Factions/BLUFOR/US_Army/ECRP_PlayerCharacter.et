@@ -1,7 +1,9 @@
-SCR_ChimeraCharacter : "{6058AB54781A0C52}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_AMG.et" {
+SCR_ChimeraCharacter : "{6648BF10EB8790B8}Prefabs/Characters/Campaign/Final/BLUFOR/US_army/Regular/Campaign_US_Player_Rifleman.et" {
  ID "522AAC66D0A2C0DC"
  components {
   ECRP_PlayerMoneyComponent "{69D85CB7478D0DFE}" {
+  }
+  ECRP_PlayerJobComponent "{69DC49D84C8517B2}" {
   }
  }
 }

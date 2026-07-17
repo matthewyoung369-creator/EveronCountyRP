@@ -1,0 +1,28 @@
+GenericEntity : "{E55FC02F8C1518A2}Prefabs/Structures/Military/Flags/FlagPole_02/FlagPole_02_V1_US.et" {
+ components {
+  RplComponent "{7A89F4D23610C101}" {
+  }
+  ActionsManagerComponent "{7A89F4D23610C102}" {
+   ActionContexts {
+    UserActionContext "{7A89F4D23610C103}" {
+     UIInfo UIInfo "{7A89F4D23610C104}" {
+      Name "Delivery Destination"
+     }
+     ContextName "delivery_destination"
+     Position PointInfo "{7A89F4D23610C105}" {
+      Offset 0 1.25 0
+     }
+    }
+   }
+   additionalActions {
+    ECRP_DeliverPackageAction "{7A89F4D23610C106}" {
+     ParentContextList {
+      "delivery_destination"
+     }
+     ActionTitle "Deliver Package"
+     VisibilityRange 3
+    }
+   }
+  }
+ }
+}

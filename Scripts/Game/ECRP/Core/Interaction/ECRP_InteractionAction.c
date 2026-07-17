@@ -1,10 +1,9 @@
-// Base class for reusable Everon County RP interactions.
 class ECRP_InteractionAction
 {
 	protected string m_sInteractionId;
 	protected string m_sDisplayName;
 
-	void ECRP_InteractionAction(string interactionId, string displayName)
+	void SetInteractionData(string interactionId, string displayName)
 	{
 		m_sInteractionId = interactionId;
 		m_sDisplayName = displayName;
@@ -28,9 +27,11 @@ class ECRP_InteractionAction
 		return context.IsValid();
 	}
 
-	// Child classes override this method.
 	void Interact(ECRP_InteractionContext context)
 	{
-		Print("ECRP: Base interaction has no implementation.", LogLevel.WARNING);
+		Print(
+			"ECRP: Base interaction has no implementation.",
+			LogLevel.WARNING
+		);
 	}
 }
