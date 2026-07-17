@@ -11,6 +11,7 @@ class ECRP_PlayerJobComponent : ScriptComponent
 	protected static const string DELIVERY_DRIVER_JOB_ID = "delivery_driver";
 	protected string m_sActiveJobId;
 	protected bool m_bDeliveryPackagePickedUp;
+	protected bool m_bDeliveryCompleted;
 
 	string GetActiveJobId()
 	{
@@ -37,10 +38,11 @@ class ECRP_PlayerJobComponent : ScriptComponent
 
 		m_sActiveJobId = jobId;
 		m_bDeliveryPackagePickedUp = false;
+		m_bDeliveryCompleted = false;
 		return true;
 	}
 
-	bool IsDeliveryPackagePickedUp()
+	bool HasPickedUpDeliveryPackage()
 	{
 		return m_bDeliveryPackagePickedUp;
 	}
@@ -54,9 +56,22 @@ class ECRP_PlayerJobComponent : ScriptComponent
 		return true;
 	}
 
+	bool HasCompletedDelivery()
+	{
+		return m_bDeliveryCompleted;
+	}
+
+	bool MarkDeliveryCompleted()
+	{
+		if (!HasJob(DELIVERY_DRIVER_JOB_ID) || !m_bDeliveryPackagePickedUp || m_bDeliveryCompleted)
+			return false;
+
+		m_bDeliveryCompleted = true;
+		return true;
+	}
+
 	void ClearActiveJob()
 	{
 		m_sActiveJobId = string.Empty;
-		m_bDeliveryPackagePickedUp = false;
 	}
 }
